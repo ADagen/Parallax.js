@@ -233,52 +233,54 @@
 		blogPostTemplate = null, // скомпилированный шаблон поста
 		parallax = {}, // здесь будет инстанс параллакса
 		preloaded = {}, // загруженные ресурсы
+
+		preloadBaseUrl = '',
 		preloadList = [ // пути для загрузки ресурсов
-			'/js/json1.json',
-			'/images/s1_mountains.png',
-			'/images/s1_sky.jpg',
-			'/images/s1_fog_1.png',
-			'/images/s1_fog_2.png',
-			'/images/s1_castle.png',
-			'/images/logo.png',
-			'/images/s1_indexTxt_1.png',
-			'/images/s1_indexTxt_2.png',
-			mobile ? '/images/swipe_down.png' : '/images/scroll_down.png',
-			'/images/s1_ninja.png',
-			'/images/s1_tree_1.png',
-			'/images/s1_tree_2.png',
-			'/images/s1_tree_3.png',
-			'/images/s1_tree_4.png',
-			'/images/s1_tree_5.png',
-			'/images/s1_stone_1.png',
-			'/images/s1_stone_2.png',
-			'/images/s1_fog_3.png',
-			'/images/s1_fog_4.png',
-			'/images/s1_fog_5.png',
-			'/images/s1_fog_6.png',
-			'/images/s1_fog_7.png',
-			'/images/newPreviews_jpeg/hello_1.jpg',
-			'/images/newPreviews_jpeg/hyper_1.jpg',
-			'/images/newPreviews_jpeg/level_1.jpg',
-			'/images/newPreviews_jpeg/m_shop_1.jpg',
-			'/images/s2_background.jpg',
-			'/images/s2_ninja.png',
-			'/images/s2_clouds.png',
-			'/images/s2_e_1.png',
-			'/images/s2_e_2.png',
-			'/images/s2_e_3.png',
-			'/images/s2_tower.png',
-			'/images/s2_roof_1.png',
-			'/images/s2_roof_2.png',
-			'/images/clip_left.jpg',
-			'/images/clip_right.jpg',
-			'/images/s3_bg_1.jpg',
-			'/images/s3_bg_2.jpg',
-			'/images/s3_bg_3.jpg',
-			'/images/s3_bg_4.jpg',
-			'/images/s3_ninja.png',
-			'/images/s4_room_left.png',
-			'/images/s4_room_right.png'
+			'js/json1.json',
+			'images/s1_mountains.png',
+			'images/s1_sky.jpg',
+			'images/s1_fog_1.png',
+			'images/s1_fog_2.png',
+			'images/s1_castle.png',
+			'images/logo.png',
+			'images/s1_indexTxt_1.png',
+			'images/s1_indexTxt_2.png',
+			mobile ? 'images/swipe_down.png' : 'images/scroll_down.png',
+			'images/s1_ninja.png',
+			'images/s1_tree_1.png',
+			'images/s1_tree_2.png',
+			'images/s1_tree_3.png',
+			'images/s1_tree_4.png',
+			'images/s1_tree_5.png',
+			'images/s1_stone_1.png',
+			'images/s1_stone_2.png',
+			'images/s1_fog_3.png',
+			'images/s1_fog_4.png',
+			'images/s1_fog_5.png',
+			'images/s1_fog_6.png',
+			'images/s1_fog_7.png',
+			'images/newPreviews_jpeg/hello_1.jpg',
+			'images/newPreviews_jpeg/hyper_1.jpg',
+			'images/newPreviews_jpeg/level_1.jpg',
+			'images/newPreviews_jpeg/m_shop_1.jpg',
+			'images/s2_background.jpg',
+			'images/s2_ninja.png',
+			'images/s2_clouds.png',
+			'images/s2_e_1.png',
+			'images/s2_e_2.png',
+			'images/s2_e_3.png',
+			'images/s2_tower.png',
+			'images/s2_roof_1.png',
+			'images/s2_roof_2.png',
+			'images/clip_left.jpg',
+			'images/clip_right.jpg',
+			'images/s3_bg_1.jpg',
+			'images/s3_bg_2.jpg',
+			'images/s3_bg_3.jpg',
+			'images/s3_bg_4.jpg',
+			'images/s3_ninja.png',
+			'images/s4_room_left.png',
+			'images/s4_room_right.png'
 		],
 		countLoaded = 0;
 
@@ -375,6 +377,7 @@
 		preloadList.forEach(function(src) {
 			var splitted = src.split('.'),
 				extention = splitted[splitted.length-1],
+				source = preloadBaseUrl + src,
 				resource;
 
 			function handleLoad() {
@@ -388,13 +391,13 @@
 				case 'jpeg':
 					resource = new Image();
 					resource.onload = handleLoad;
-					resource.src = src;
+					resource.src = source;
 					preloaded[src] = resource;
 					break;
 
 				case 'json':
 					$.ajax({
-						url: src,
+						url: source,
 						dataType: 'json',
 						success: function(json) {
 							preloaded[src] = json;
@@ -407,7 +410,7 @@
 					var fjs = document.getElementsByTagName('script')[0];
 					resource = document.createElement('script');
 					resource.onload = handleLoad;
-					resource.src = src;
+					resource.src = source;
 					fjs.parentNode.insertBefore(resource, fjs);
 					preloaded[src] = resource;
 					break;
