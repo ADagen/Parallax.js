@@ -473,7 +473,7 @@
 	 * Создаёт и вставляет в animationCfg элементы постов из json1.json
 	 */
 	function injectPostsFromJson() {
-		var shuffledPosts = shuffle(preloaded['/js/json1.json'].data),
+		var shuffledPosts = shuffle(preloaded['js/json1.json'].data),
 			length = shuffledPosts.length,
 			betweenPosts = 10,
 			durationPost = 150,
@@ -668,7 +668,7 @@
 		$(html).find('.portfolio').each(function(index, sender) {
 			var $sender = $(sender),
 				name = $sender.data('src'),
-				source = '/images/newPreviews_jpeg/' + name + '_',
+				source = 'images/newPreviews_jpeg/' + name + '_',
 				ext = '.jpg',
 				images = [];
 
