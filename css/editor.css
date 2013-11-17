@@ -30,10 +30,10 @@
 }
 
 .left-test {
-    background-image: url(/images/tmp1.png);
+    background-image: url(../images/tmp1.png);
 }
 .right-test {
-    background-image: url(/images/tmp2.png);
+    background-image: url(../images/tmp2.png);
 }
 .progress-bar {
     background-color: grey;

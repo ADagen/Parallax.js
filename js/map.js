@@ -206,7 +206,7 @@ function initializeMap() {
 	};
 
 	var markerImage = new google.maps.MarkerImage(
-		'/images/marker.png',
+		'../images/marker.png',
 		new google.maps.Size(56,68),
 		new google.maps.Point(0,0),
 		new google.maps.Point(20,68)
