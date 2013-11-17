@@ -33,7 +33,7 @@ body {
     width: 96px;
     height: 29px;
     opacity: 0.5;
-    background: url(/images/uprock-logo-small-1.png) no-repeat 0 0;
+    background: url(images/uprock-logo-small-1.png) no-repeat 0 0;
     -webkit-transition: opacity 0.15s ease-out;
     -moz-transition: opacity 0.15s ease-out;
     transition: opacity 0.15s ease-out;
@@ -90,7 +90,7 @@ footer > nav > div > a {
 }
 
 .facebook-link {
-    background: url(/images/facebook-link.png) no-repeat 0 0;
+    background: url(images/facebook-link.png) no-repeat 0 0;
     float: right;
     width: 28px;
     height: 28px;
