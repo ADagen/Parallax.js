@@ -1,0 +1,736 @@
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic&subset=latin,cyrillic);
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    font-family: 'Noto Sans';
+    font-size: 10px;
+}
+
+* {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.enableSelect {
+    -webkit-touch-callout: text;
+    -webkit-user-select: text;
+    -khtml-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
+.uprock-logo-small {
+    float: left;
+    margin: 9px 30px 0 25px;
+    width: 96px;
+    height: 29px;
+    opacity: 0.5;
+    background: url(/images/uprock-logo-small-1.png) no-repeat 0 0;
+    -webkit-transition: opacity 0.15s ease-out;
+    -moz-transition: opacity 0.15s ease-out;
+    transition: opacity 0.15s ease-out;
+}
+.uprock-logo-small:hover,
+.uprock-logo-small:active {
+    opacity: 1;
+}
+.uprock-logo-small a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    position: fixed;
+    height: 45px;
+    width: 100%;
+    left: 0;
+    bottom: -45px;
+    background-color: black;
+    opacity: 0;
+    -webkit-transition: opacity 1s linear, bottom 1s ease-out;
+    -moz-transition: opacity 1s linear, bottom 1s ease-out;
+    transition: opacity 1s linear, bottom 1s ease-out;
+}
+footer > nav {
+    float: left;
+}
+footer > nav > div {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+    opacity: 0.999;
+    position: relative;
+
+    display: inline;
+    font-family: 'Open Sans';
+    font-size: 11px;
+    font-weight: normal;
+    color: #808080;
+    text-decoration: none;
+    cursor: pointer;
+}
+footer > nav > div:hover {
+    color: white;
+}
+footer > nav > div > a {
+    color: inherit;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+
+.facebook-link {
+    background: url(/images/facebook-link.png) no-repeat 0 0;
+    float: right;
+    width: 28px;
+    height: 28px;
+    padding: 0 5px;
+    margin: 9px 0;
+    opacity: 0.5;
+    -webkit-transition: opacity 0.15s ease-out;
+    -moz-transition: opacity 0.15s ease-out;
+    transition: opacity 0.15s ease-out;
+}
+.facebook-link:hover,
+.facebook-link:active {
+    opacity: 1;
+}
+.facebook-link a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.likeNest {
+    float: right;
+    padding: 0 12px;
+    margin: 13px 0;
+    width: 80px;
+}
+
+.mail-to-uprock {
+    float: right;
+    padding: 0 12px;
+    margin: 13px 0;
+    opacity: 0.5;
+    -webkit-transition: opacity 0.15s ease-out;
+    -moz-transition: opacity 0.15s ease-out;
+    transition: opacity 0.15s ease-out;
+}
+.mail-to-uprock:hover,
+.mail-to-uprock:active {
+    opacity: 1;
+    text-decoration: none;
+}
+.mail-to-uprock a {
+    font-size: 13px;
+    display: block;
+    color: white;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+
+
+.anim2d-hover {
+    border-left: solid 1px #262626;
+    /*padding-left: 3px;*/
+    text-align: center;
+    line-height: 25px;
+    /*margin: 10px 0;*/
+}
+.anim2d-hover span {
+    position: relative;
+    display: inline-block;
+    padding: 10px 35px;
+    background-color: black;
+    -webkit-transition: background-color 0.3s ease-out, color 0.3s ease-out;
+    -moz-transition: background-color 0.3s ease-out, color 0.3s ease-out;
+    transition: background-color 0.3s ease-out, color 0.3s ease-out;
+}
+.anim2d-hover:hover span,
+.anim2d-hover:focus span {
+    background-color: white;
+    color: black;
+}
+
+.anim3d-hover {
+    border-left: solid 1px #262626;
+    /*padding-left: 3px;*/
+    text-align: center;
+    line-height: 25px;
+    /*margin: 10px 0;*/
+    -webkit-perspective: 400px;
+    -moz-perspective: 400px;
+    perspective: 400px;
+}
+.anim3d-hover span {
+    position: relative;
+    display: inline-block;
+    padding: 10px 35px;
+    background: black;
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    -moz-transition: -moz-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.anim3d-hover span::before {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 10px 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    color: black;
+    content: attr(data-hover);
+    -webkit-transition: background 0.3s;
+    -moz-transition: background 0.3s;
+    transition: background 0.3s;
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+    -webkit-perspective: 5000px;
+    -moz-perspective: 5000px;
+    perspective: 5000px;
+}
+
+.anim3d-hover:focus span,
+.anim3d-hover:hover span {
+    -webkit-transform: rotateX(90deg) translateY(-22px);
+    -moz-transform: rotateX(90deg) translateY(-22px);
+    transform: rotateX(90deg) translateY(-22px);
+}
+
+footer > nav :last-child a {
+    border-right: solid 1px #262626;
+}
+
+#preloaderAnimation {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -200px;
+    margin-top: -200px;
+}
+
+.clientsLogos {
+    margin-top: 20px;
+    display: block;
+    vertical-align: middle;
+    text-align: center;
+}
+.logosRow {
+    display: table;
+    padding: 20px 0;
+    width: 100%;
+}
+.logosRow div {
+    width: 33%;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.fb-like-box { width: 100%; height: 100%; }
+
+
+
+
+
+.clientTxt {
+    width: 100%;
+    padding-top: 20px;
+    font-family: 'Noto Sans';
+    color: #fff;
+    display: table-cell;
+    border: 0px;
+    overflow: hidden;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+}
+.clientTxt .mainInfo {
+    font-size: 1.6em;
+    display: inline-block;
+    text-align: left;
+    margin: 0 -.3em 0 0;
+    padding: 0 2.5em;
+}
+.clientTxt .mainInfo h2 {
+    padding: 0 0 1.5em 0;
+    font-size: 1.25em;
+    font-weight: normal;
+    font-family: 'Noto Sans';
+}
+.clientTxt .mainInfo .specific {
+    margin: 0 0 2.75em 0;
+}
+.clientTxt .mainInfo .specific li {
+    position: relative;
+    padding: 0 0 1.06em 1.75em;
+}
+.clientTxt .mainInfo .specific li img {
+    background: url(/images/listMarker.gif) 0 0 no-repeat;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    background-size: 100% 100%;
+}
+
+.clientTxt .mainInfo .technologies {
+    width: 100%;
+}
+.clientTxt .mainInfo .technologies div {
+    display: inline-block;
+    margin: 0 -.3em 0 0;
+    width: 25%;
+    vertical-align: top;
+}
+.clientTxt .mainInfo .technologies h3 {
+    font-weight: bold;
+    line-height: 1.25em;
+    padding: 7px 0;
+    margin: 0 15% 13px 0;
+    white-space: nowrap;
+    border-top: 1px solid #fff;
+    border-bottom: 1px dotted #fff;
+    font-family: 'Noto Sans';
+}
+ul {
+    list-style: none;
+}
+
+
+/* стили для постов блога */
+.for-fb-widget {
+    background-color: black;
+    overflow: hidden;
+}
+.for-fb-widget b {
+    position: absolute;
+    background: #000;
+    z-index: 1202;
+    overflow: hidden;
+}
+.bottomBorder {
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+}
+.topBorder {
+    width: 100%;
+    height: 1px;
+    top: 0;
+    left: 0;
+}
+.rightBorder {
+    width: 1px;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+.leftBorder {
+    width: 1px;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+
+.blogEl {
+    background: black;
+}
+.blogEl a {
+    display: block;
+    text-decoration: none;
+}
+.pTx {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1203;
+    overflow: hidden;
+    background: url(/images/blogElOp.png) 0 0 repeat;
+}
+.blogEl a .pPic {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1202;
+    overflow: hidden;
+}.blogEl a .pPic .widthR {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+.blogEl a .count {
+    margin: 0;
+    color: #fff;
+    font-size: 1.3em;
+    font-family: 'Noto Sans';
+    line-height: 2em;
+    padding: 3px 30px 12px 0;
+    text-align: right;
+}
+.blogEl a .count span {
+    display: inline-block;
+    padding: 0 0 0 17px;
+    margin: 0 -.3em 0 10px;
+}
+.blogEl a .count .likes {
+    background: url(/images/blogElLikesCount.png) 0 9px no-repeat;
+}
+.blogEl a .count .comments {
+    background: url(/images/blogsElCommentsCount.png) 0 9px no-repeat;
+}
+.blogEl a .txt {
+    font-size: 1.3em;
+    line-height: 1.3em;
+    color: #fff;
+    padding: 0 30px;
+    opacity: 0.8;
+}
+.blogEl a .pPic {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1202;
+    overflow: hidden;
+}
+a img {
+    border: 0px none !important;
+}
+
+
+#map, #mapContainer {
+    width: 100%;
+    height: 100%;
+}
+.contactsLabel {
+    width: 242px;
+    height: 128px;
+    padding: 259px 0 0 102px;
+    overflow: hidden;
+    position: absolute;
+    display: table-cell;
+    vertical-align: middle;
+    top: 50px;
+    right: 50px;
+    color: #fff;
+    font-size: 1.8em;
+    font-family: 'Noto Sans';
+    background: url(/images/contacts2.png) 0 0 no-repeat;
+    background-size: 100%;
+}
+.contactsLabel a {
+    display: block;
+    width: 148px;
+    height: 41px;
+}
+
+
+.wrap {
+    background-size: 100% auto;
+
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease;
+    -moz-transition: opacity 0.5s ease;
+    -ms-transition: opacity 0.5s ease;
+    -o-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#s1-background {
+    background: url(/images/s1_mountains.png) no-repeat 0 100%, url(/images/s1_sky.jpg) no-repeat 0 0;
+    background-size: 100%;
+}
+
+#env-fog-1 {
+    position: absolute;
+    background-size: 100%;
+    background-image: url(/images/s1_fog_1.png);
+    background-repeat: no-repeat;
+}
+#env-fog-2 {
+    position: absolute;
+    background-size: 100%;
+    background-image: url(/images/s1_fog_2.png);
+    background-repeat: no-repeat;
+}
+#env-castle {
+    position: absolute;
+    background-size: 100%;
+    background-image: url(/images/s1_castle.png);
+    background-repeat: no-repeat;
+}
+
+#uprock-logo {
+    position: absolute;
+    background-size: 100%;
+    background-image: url(/images/logo.png);
+    background-repeat: no-repeat;
+}
+#uprock-motto {
+    background-size: 100%;
+    background-image: url(/images/s1_indexTxt_1.png);
+    background-repeat: no-repeat;
+}
+#uprock-motto-from {
+    background-size: 100%;
+    background-image: url(/images/s1_indexTxt_2.png);
+    background-repeat: no-repeat;
+}
+#uprock-scroll-hint {
+    background-size: 100%;
+    background-image: url(/images/scroll_down.png);
+    background-repeat: no-repeat;
+}
+#uprock-swipe-hint {
+    background-size: 100%;
+    background-image: url(/images/swipe_down.png);
+    background-repeat: no-repeat;
+}
+
+#stand-ninja {
+    background-size: 100%;
+    background-image: url(/images/s1_ninja.png);
+    background-repeat: no-repeat;
+}
+
+#s1-tree-1 {
+    background-size: 100%;
+    background-image: url(/images/s1_tree_1.png);
+    background-repeat: no-repeat;
+}
+#s1-tree-2 {
+    background-size: 100%;
+    background-image: url(/images/s1_tree_2.png);
+    background-repeat: no-repeat;
+}
+#s1-tree-3 {
+    background-size: 100%;
+    background-image: url(/images/s1_tree_3.png);
+    background-repeat: no-repeat;
+}
+#s1-tree-4 {
+    background-size: 100%;
+    background-image: url(/images/s1_tree_4.png);
+    background-repeat: no-repeat;
+}
+#s1-tree-5 {
+    background-size: 100%;
+    background-image: url(/images/s1_tree_5.png);
+    background-repeat: no-repeat;
+}
+#s1-stone-1 {
+    background-size: 100%;
+    background-image: url(/images/s1_stone_1.png);
+    background-repeat: no-repeat;
+}
+#s1-stone-2 {
+    background-size: 100%;
+    background-image: url(/images/s1_stone_2.png);
+    background-repeat: no-repeat;
+}
+#s1-fog-3 {
+    background-size: 100%;
+    background-image: url(/images/s1_fog_3.png);
+    background-repeat: no-repeat;
+}
+#s1-fog-4 {
+    background-size: 100%;
+    background-image: url(/images/s1_fog_4.png);
+    background-repeat: no-repeat;
+}
+#s1-fog-5 {
+    background-size: 100%;
+    background-image: url(/images/s1_fog_5.png);
+    background-repeat: no-repeat;
+}
+#s1-fog-6 {
+    background-size: 100%;
+    background-image: url(/images/s1_fog_6.png);
+    background-repeat: no-repeat;
+}
+#s1-fog-7 {
+    background-size: 100%;
+    background-image: url(/images/s1_fog_7.png);
+    background-repeat: no-repeat;
+}
+#s1-portfolio-1 {
+    background-color: black;
+}
+#s1-portfolio-2 {
+    background-color: black;
+}
+#s1-portfolio-3 {
+    background-color: black;
+}
+#s1-portfolio-4 {
+    background-color: black;
+}
+
+.portfolio {
+    position: relative;
+    height: 33%;
+    /*width: 100%;*/
+    /*overflow: hidden;*/
+}
+.portfolio > img {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+
+    -webkit-transition: opacity 0.2s linear;
+    -moz-transition: opacity 0.2s linear;
+    -ms-transition: opacity 0.2s linear;
+    -o-transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear;
+}
+
+
+#s2-background {
+    background-size: 100%;
+    background-image: url(/images/s2_background.jpg);
+    background-repeat: no-repeat;
+}
+#s2-ninja {
+    background-size: 100%;
+    background-image: url(/images/s2_ninja.png);
+    background-repeat: no-repeat;
+}
+#s2-clouds {
+    background-size: 100%;
+    background-image: url(/images/s2_clouds.png);
+    background-repeat: no-repeat;
+}
+
+#s2-e-1 {
+    background-size: 100%;
+    background-image: url(/images/s2_e_1.png);
+    background-repeat: no-repeat;
+}
+#s2-e-2 {
+    background-size: 100%;
+    background-image: url(/images/s2_e_2.png);
+    background-repeat: no-repeat;
+}
+#s2-e-3 {
+    background-size: 100%;
+    background-image: url(/images/s2_e_3.png);
+    background-repeat: no-repeat;
+}
+#s2-tower {
+    background-size: 100%;
+    background-image: url(/images/s2_tower.png);
+    background-repeat: no-repeat;
+}
+#s2-roof-1 {
+    background-size: 100%;
+    background-image: url(/images/s2_roof_1.png);
+    background-repeat: no-repeat;
+}
+#s2-roof-2 {
+    background-size: 100%;
+    background-image: url(/images/s2_roof_2.png);
+    background-repeat: no-repeat;
+}
+#s2-clip-left {
+    background-size: 100%;
+    background-image: url(/images/clip_left.jpg);
+    background-repeat: no-repeat;
+}
+#s2-clip-right {
+    background-size: 100%;
+    background-image: url(/images/clip_right.jpg);
+    background-repeat: no-repeat;
+}
+#s2-about-left {
+    /*background-color: #111111;*/
+}
+#s2-about-right {
+    /*background-color: #111111;*/
+}
+
+#s3-bg-1 {
+    background-size: 100%;
+    background-image: url(/images/s3_bg_1.jpg);
+    background-repeat: no-repeat;
+}
+#s3-bg-2 {
+    background-size: 100%;
+    background-image: url(/images/s3_bg_2.jpg);
+    background-repeat: no-repeat;
+}
+#s3-bg-3 {
+    background-size: 100%;
+    background-image: url(/images/s3_bg_3.jpg);
+    background-repeat: no-repeat;
+}
+#s3-bg-4 {
+    background-size: 100%;
+    background-image: url(/images/s3_bg_4.jpg);
+    background-repeat: no-repeat;
+}
+#s3-ninja {
+    background-size: 100%;
+    background-image: url(/images/s3_ninja.png);
+    background-repeat: no-repeat;
+}
+
+#s4-room-left {
+    background-size: 100%;
+    background-image: url(/images/s4_room_left.png);
+    background-repeat: no-repeat;
+}
+#s4-room-right {
+    background-size: 100%;
+    background-image: url(/images/s4_room_right.png);
+    background-repeat: no-repeat;
+}
+#s4-cut-stripe {
+    background-color: white;
+    /*-webkit-transform-origin: left center;*/
+    /*-moz-transform-origin: left center;*/
+    /*-ms-transform-origin: left center;*/
+    /*-o-transform-origin: left center;*/
+    /*transform-origin: left center;*/
+}

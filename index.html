@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UPROCK</title>
+    <meta charset='utf-8'>
+    <link rel="icon" href="images/fav_icon.png">
+    <link rel="stylesheet" media="all" href="css/main.css">
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <script src="js/lib/jquery-2.0.3.js"></script>
+    <script src="js/lib/underscore.min.1.5.2.js"></script>
+    <script src="js/lib/handlebars-1.0.0.js"></script>
+    <script src="js/lib/hammer.min.js"></script>
+    <script src="js/lib/backbone.min.1.0.0.js"></script>
+
+    <link rel="nofollow" href="http://code.google.com/apis/maps/documentation/javascript/examples/standard.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript" src="js/map.js"></script>
+
+    <!--<script src="js/animationConfig.js"></script>-->
+    <script src="js/cfg/uprock1.js"></script>
+
+    <script src="core/Parallax.js"></script>
+    <script src="core/Parallax.Element.js"></script>
+    <script src="core/Parallax.ElementTransition.js"></script>
+    <script src="core/Parallax.ElementTransform2D.js"></script>
+    <script src="core/Parallax.ElementTransform3D.js"></script>
+
+    <script src="js/index.js"></script>
+
+    <script id="s2-about-left-template" type="text/x-template">
+        <div class="clientsLogos">
+            <div class="clientsLogosHtml clearfix">
+                <div class="logosRow" style="padding-top: 21px; padding-bottom: 21px;">
+                    <div><img src="/images/clientLogos/logo_1.png" alt="" width="91"></div>
+                    <div><img src="/images/clientLogos/logo_2.png" alt="" width="114"></div>
+                    <div><img src="/images/clientLogos/logo_3.png" alt="" width="108"></div>
+                </div>
+                <div class="logosRow" style="padding-top: 21px; padding-bottom: 21px;">
+                    <div><img src="/images/clientLogos/logo_14.png" alt="" width="107"></div>
+                    <div><img src="/images/clientLogos/logo_5.png" alt="" width="99"></div>
+                    <div><img src="/images/clientLogos/logo_15.png" alt="" width="117"></div>
+                </div>
+                <div class="logosRow" style="padding-top: 21px; padding-bottom: 21px;">
+                    <div><img src="/images/clientLogos/logo_7.png" alt="" width="88"></div>
+                    <div><img src="/images/clientLogos/logo_8.png" alt="" width="86"></div>
+                    <div><img src="/images/clientLogos/logo_9.png" alt="" width="85"></div>
+                </div>
+                <div class="logosRow" style="padding-top: 21px; padding-bottom: 21px;">
+                    <div><img src="/images/clientLogos/logo_10.png" alt="" width="102"></div>
+                    <div><img src="/images/clientLogos/logo_11.png" alt="" width="101"></div>
+                    <div><img src="/images/clientLogos/logo_12.png" alt="" width="102"></div>
+                </div>
+                <div class="logosRow" style="padding-top: 21px; padding-bottom: 21px;">
+                    <div><img src="/images/clientLogos/logo_13.png" alt="" width="86"></div>
+                    <div><img src="/images/clientLogos/logo_4.png" alt="" width="68"></div>
+                    <div><img src="/images/clientLogos/logo_6.png" alt="" width="33"></div>
+                </div>
+            </div>
+        </div>
+    </script>
+
+    <script id="s2-about-right-template" type="text/x-template">
+        <div class="clientTxt clearfix" style="font-size: 10px;">
+            <div class="mainInfo clearfix">
+                <h2>We specialize on digital solutions in advertising</h2>
+                <ul class="specific clearfix">
+                    <li><img src="/images/blank.gif" width="15" height="15" alt="">Creating promosites</li>
+                    <li><img src="/images/blank.gif" width="15" height="15" alt="">Apps for social networks</li>
+                    <li><img src="/images/blank.gif" width="15" height="15" alt="">Corporate websites</li>
+                    <li><img src="/images/blank.gif" width="15" height="15" alt="">Special projects (partner sites)</li>
+                    <li><img src="/images/blank.gif" width="15" height="15" alt="">SaaS-systems</li>
+                    <li><img src="/images/blank.gif" width="15" height="15" alt="">Realization of the highload projects</li>
+                    <li><img src="/images/blank.gif" width="15" height="15" alt="">Complex integrated solutions</li>
+                    <li><img src="/images/blank.gif" width="15" height="15" alt="">Understanding the specifics of working with advertising projects - terms, force majeure, operational changes</li>
+                </ul>
+                <div class="technologies clearfix">
+                    <div>
+                        <h3>Design</h3>
+                        <ul>
+                            <li>Prototype</li>
+                            <li>UX-design</li>
+                            <li>Graphic design</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Front-end</h3>
+                        <ul>
+                            <li>Html5</li>
+                            <li>JavaScript</li>
+                            <li>Flash</li>
+                            <li>Canvas</li>
+                            <li>WebGL</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Back-end</h3>
+                        <ul>
+                            <li>Php</li>
+                            <li>.NET</li>
+                            <li>Ruby</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>CMS</h3>
+                        <ul>
+                            <li>Drupal</li>
+                            <li>MODx</li>
+                            <li>Word Press</li>
+                            <li>Bitrix</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+
+    <script id="blog-element-template" type="text/x-template">
+        <a href="http://facebook.com/uprockpro" target="_blank" style="width: 100%; height: 100%;">
+            <div class="pTx">
+                <p class="count">
+                    <span class="likes">{{likes.count}}</span>
+                    <span class="comments">{{comments.count}}</span>
+                </p>
+                <p class="txt">{{message}}</p>
+            </div>
+            <div class="pPic">
+                <div class="widthR" style="background-image: url({{picture}});"></div>
+            </div>
+        </a>
+    </script>
+
+    <script id="map-element-template" type="text/x-template">
+        <div id="mapContainer">
+            <div id="map"></div>
+            <div class="contactsLabel">
+                <a href="mailto:hit@uprock.pro"></a>
+            </div>
+        </div>
+    </script>
+
+    <script id="fb-widget-template" type="text/x-template">
+        <b class="topBorder"></b>
+        <b class="rightBorder"></b>
+        <b class="bottomBorder"></b>
+        <b class="leftBorder"></b>
+        <div class="fb-like-box" data-href="http://www.facebook.com/uprockpro" data-width="{{width}}px" data-height="{{height}}px" data-colorscheme="dark" data-show-faces="true" data-stream="false" data-header="false"></div>
+    </script>
+</head>
+<body>
+    <div id="fb-root" style="position: absolute;width:1px;height:1px;overflow:hidden;top:-1px;left:-1px;"></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=280047595434821";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <img id="preloaderAnimation" src="images/preloader.gif">
+
+    <div id="parallaxWrap" class="wrap"></div>
+    <div id="labWrap" class="wrap"></div>
+
+    <footer>
+        <div class="uprock-logo-small"><a href='/'></a></div>
+        <nav>
+            <!--<ul>-->
+                <div><a class="anim3d-hover" href="#portfolio" data-anchor="portfolio">
+                    <span data-hover="PORTFOLIO">PORTFOLIO</span>
+                </a></div>
+                <div><a class="anim3d-hover" href="#clients" data-anchor="clients">
+                    <span data-hover="SERVICES">SERVICES</span>
+                </a></div>
+                <div><a class="anim3d-hover" href="#posts" data-anchor="posts">
+                    <span data-hover="BLOG">BLOG</span>
+                </a></div>
+                <div><a class="anim3d-hover" href="#contacts" data-anchor="contacts">
+                    <span data-hover="CONTACTS">CONTACTS</span>
+                </a></div>
+                <div><a class="anim3d-hover" href="#lab" data-anchor="lab">
+                    <span data-hover="LAB">LAB</span>
+                </a></div>
+            <!--</ul>-->
+        </nav>
+
+        <div class="likeNest">
+            <div class="fb-like" data-href="http://www.facebook.com/uprockpro" data-width="450" data-colorscheme="dark" data-layout="button_count" data-show-faces="false" data-send="false"></div>
+        </div>
+        <div class="facebook-link">
+            <a href="http://www.facebook.com/uprockpro" target="_blank"></a>
+        </div>
+        <div class="mail-to-uprock">
+            <a href="mailto:hit@uprock.pro">hit@uprock.pro</a>
+        </div>
+    </footer>
+</body>
+</html>
