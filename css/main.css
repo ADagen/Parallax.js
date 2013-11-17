@@ -90,7 +90,7 @@ footer > nav > div > a {
 }
 
 .facebook-link {
-    background: url(images/facebook-link.png) no-repeat 0 0;
+    background: url(../images/facebook-link.png) no-repeat 0 0;
     float: right;
     width: 28px;
     height: 28px;
@@ -295,7 +295,7 @@ footer > nav :last-child a {
     padding: 0 0 1.06em 1.75em;
 }
 .clientTxt .mainInfo .specific li img {
-    background: url(/images/listMarker.gif) 0 0 no-repeat;
+    background: url(../images/listMarker.gif) 0 0 no-repeat;
     position: absolute;
     top: 2px;
     left: 0;
@@ -377,7 +377,7 @@ ul {
     position: relative;
     z-index: 1203;
     overflow: hidden;
-    background: url(/images/blogElOp.png) 0 0 repeat;
+    background: url(../images/blogElOp.png) 0 0 repeat;
 }
 .blogEl a .pPic {
     width: 100%;
@@ -408,10 +408,10 @@ ul {
     margin: 0 -.3em 0 10px;
 }
 .blogEl a .count .likes {
-    background: url(/images/blogElLikesCount.png) 0 9px no-repeat;
+    background: url(../images/blogElLikesCount.png) 0 9px no-repeat;
 }
 .blogEl a .count .comments {
-    background: url(/images/blogsElCommentsCount.png) 0 9px no-repeat;
+    background: url(../images/blogsElCommentsCount.png) 0 9px no-repeat;
 }
 .blogEl a .txt {
     font-size: 1.3em;
@@ -451,7 +451,7 @@ a img {
     color: #fff;
     font-size: 1.8em;
     font-family: 'Noto Sans';
-    background: url(/images/contacts2.png) 0 0 no-repeat;
+    background: url(../images/contacts2.png) 0 0 no-repeat;
     background-size: 100%;
 }
 .contactsLabel a {
@@ -479,120 +479,120 @@ a img {
 }
 
 #s1-background {
-    background: url(/images/s1_mountains.png) no-repeat 0 100%, url(/images/s1_sky.jpg) no-repeat 0 0;
+    background: url(../images/s1_mountains.png) no-repeat 0 100%, url(/images/s1_sky.jpg) no-repeat 0 0;
     background-size: 100%;
 }
 
 #env-fog-1 {
     position: absolute;
     background-size: 100%;
-    background-image: url(/images/s1_fog_1.png);
+    background-image: url(../images/s1_fog_1.png);
     background-repeat: no-repeat;
 }
 #env-fog-2 {
     position: absolute;
     background-size: 100%;
-    background-image: url(/images/s1_fog_2.png);
+    background-image: url(../images/s1_fog_2.png);
     background-repeat: no-repeat;
 }
 #env-castle {
     position: absolute;
     background-size: 100%;
-    background-image: url(/images/s1_castle.png);
+    background-image: url(../images/s1_castle.png);
     background-repeat: no-repeat;
 }
 
 #uprock-logo {
     position: absolute;
     background-size: 100%;
-    background-image: url(/images/logo.png);
+    background-image: url(../images/logo.png);
     background-repeat: no-repeat;
 }
 #uprock-motto {
     background-size: 100%;
-    background-image: url(/images/s1_indexTxt_1.png);
+    background-image: url(../images/s1_indexTxt_1.png);
     background-repeat: no-repeat;
 }
 #uprock-motto-from {
     background-size: 100%;
-    background-image: url(/images/s1_indexTxt_2.png);
+    background-image: url(../images/s1_indexTxt_2.png);
     background-repeat: no-repeat;
 }
 #uprock-scroll-hint {
     background-size: 100%;
-    background-image: url(/images/scroll_down.png);
+    background-image: url(../images/scroll_down.png);
     background-repeat: no-repeat;
 }
 #uprock-swipe-hint {
     background-size: 100%;
-    background-image: url(/images/swipe_down.png);
+    background-image: url(../images/swipe_down.png);
     background-repeat: no-repeat;
 }
 
 #stand-ninja {
     background-size: 100%;
-    background-image: url(/images/s1_ninja.png);
+    background-image: url(../images/s1_ninja.png);
     background-repeat: no-repeat;
 }
 
 #s1-tree-1 {
     background-size: 100%;
-    background-image: url(/images/s1_tree_1.png);
+    background-image: url(../images/s1_tree_1.png);
     background-repeat: no-repeat;
 }
 #s1-tree-2 {
     background-size: 100%;
-    background-image: url(/images/s1_tree_2.png);
+    background-image: url(../images/s1_tree_2.png);
     background-repeat: no-repeat;
 }
 #s1-tree-3 {
     background-size: 100%;
-    background-image: url(/images/s1_tree_3.png);
+    background-image: url(../images/s1_tree_3.png);
     background-repeat: no-repeat;
 }
 #s1-tree-4 {
     background-size: 100%;
-    background-image: url(/images/s1_tree_4.png);
+    background-image: url(../images/s1_tree_4.png);
     background-repeat: no-repeat;
 }
 #s1-tree-5 {
     background-size: 100%;
-    background-image: url(/images/s1_tree_5.png);
+    background-image: url(../images/s1_tree_5.png);
     background-repeat: no-repeat;
 }
 #s1-stone-1 {
     background-size: 100%;
-    background-image: url(/images/s1_stone_1.png);
+    background-image: url(../images/s1_stone_1.png);
     background-repeat: no-repeat;
 }
 #s1-stone-2 {
     background-size: 100%;
-    background-image: url(/images/s1_stone_2.png);
+    background-image: url(../images/s1_stone_2.png);
     background-repeat: no-repeat;
 }
 #s1-fog-3 {
     background-size: 100%;
-    background-image: url(/images/s1_fog_3.png);
+    background-image: url(../images/s1_fog_3.png);
     background-repeat: no-repeat;
 }
 #s1-fog-4 {
     background-size: 100%;
-    background-image: url(/images/s1_fog_4.png);
+    background-image: url(../images/s1_fog_4.png);
     background-repeat: no-repeat;
 }
 #s1-fog-5 {
     background-size: 100%;
-    background-image: url(/images/s1_fog_5.png);
+    background-image: url(../images/s1_fog_5.png);
     background-repeat: no-repeat;
 }
 #s1-fog-6 {
     background-size: 100%;
-    background-image: url(/images/s1_fog_6.png);
+    background-image: url(../images/s1_fog_6.png);
     background-repeat: no-repeat;
 }
 #s1-fog-7 {
     background-size: 100%;
-    background-image: url(/images/s1_fog_7.png);
+    background-image: url(../images/s1_fog_7.png);
     background-repeat: no-repeat;
 }
 #s1-portfolio-1 {
@@ -629,58 +629,58 @@ a img {
 
 #s2-background {
     background-size: 100%;
-    background-image: url(/images/s2_background.jpg);
+    background-image: url(../images/s2_background.jpg);
     background-repeat: no-repeat;
 }
 #s2-ninja {
     background-size: 100%;
-    background-image: url(/images/s2_ninja.png);
+    background-image: url(../images/s2_ninja.png);
     background-repeat: no-repeat;
 }
 #s2-clouds {
     background-size: 100%;
-    background-image: url(/images/s2_clouds.png);
+    background-image: url(../images/s2_clouds.png);
     background-repeat: no-repeat;
 }
 
 #s2-e-1 {
     background-size: 100%;
-    background-image: url(/images/s2_e_1.png);
+    background-image: url(../images/s2_e_1.png);
     background-repeat: no-repeat;
 }
 #s2-e-2 {
     background-size: 100%;
-    background-image: url(/images/s2_e_2.png);
+    background-image: url(../images/s2_e_2.png);
     background-repeat: no-repeat;
 }
 #s2-e-3 {
     background-size: 100%;
-    background-image: url(/images/s2_e_3.png);
+    background-image: url(../images/s2_e_3.png);
     background-repeat: no-repeat;
 }
 #s2-tower {
     background-size: 100%;
-    background-image: url(/images/s2_tower.png);
+    background-image: url(../images/s2_tower.png);
     background-repeat: no-repeat;
 }
 #s2-roof-1 {
     background-size: 100%;
-    background-image: url(/images/s2_roof_1.png);
+    background-image: url(../images/s2_roof_1.png);
     background-repeat: no-repeat;
 }
 #s2-roof-2 {
     background-size: 100%;
-    background-image: url(/images/s2_roof_2.png);
+    background-image: url(../images/s2_roof_2.png);
     background-repeat: no-repeat;
 }
 #s2-clip-left {
     background-size: 100%;
-    background-image: url(/images/clip_left.jpg);
+    background-image: url(../images/clip_left.jpg);
     background-repeat: no-repeat;
 }
 #s2-clip-right {
     background-size: 100%;
-    background-image: url(/images/clip_right.jpg);
+    background-image: url(../images/clip_right.jpg);
     background-repeat: no-repeat;
 }
 #s2-about-left {
@@ -692,38 +692,38 @@ a img {
 
 #s3-bg-1 {
     background-size: 100%;
-    background-image: url(/images/s3_bg_1.jpg);
+    background-image: url(../images/s3_bg_1.jpg);
     background-repeat: no-repeat;
 }
 #s3-bg-2 {
     background-size: 100%;
-    background-image: url(/images/s3_bg_2.jpg);
+    background-image: url(../images/s3_bg_2.jpg);
     background-repeat: no-repeat;
 }
 #s3-bg-3 {
     background-size: 100%;
-    background-image: url(/images/s3_bg_3.jpg);
+    background-image: url(../images/s3_bg_3.jpg);
     background-repeat: no-repeat;
 }
 #s3-bg-4 {
     background-size: 100%;
-    background-image: url(/images/s3_bg_4.jpg);
+    background-image: url(../images/s3_bg_4.jpg);
     background-repeat: no-repeat;
 }
 #s3-ninja {
     background-size: 100%;
-    background-image: url(/images/s3_ninja.png);
+    background-image: url(../images/s3_ninja.png);
     background-repeat: no-repeat;
 }
 
 #s4-room-left {
     background-size: 100%;
-    background-image: url(/images/s4_room_left.png);
+    background-image: url(../images/s4_room_left.png);
     background-repeat: no-repeat;
 }
 #s4-room-right {
     background-size: 100%;
-    background-image: url(/images/s4_room_right.png);
+    background-image: url(../images/s4_room_right.png);
     background-repeat: no-repeat;
 }
 #s4-cut-stripe {
