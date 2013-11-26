@@ -1,6 +1,5 @@
 Parallax.js
 ===========
-Live demo: http://dagen-niger.github.io/Parallax.js/
 
 Allow programming parallax effects in a declarative style.  
 Using plain object config to describe animations.  
